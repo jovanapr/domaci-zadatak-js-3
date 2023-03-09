@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Domaci JavaScript3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="StyleSheet11.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <div id="background">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <button onclick="myFunction()" class="bg-success text-light border-0 rounded mt-2 px-3 py-2"
+                    type="button">Click Me!</button>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p id="p1" class="mt-3">Hi.</p>
+                <button onclick="changeText()" class="bg-primary text-light border-0 rounded px-3 py-2"
+                    type="button">Change text</button>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-center">
+                <img id="img1" class="mt-3 w-25 h-25" src="hello.jpg">
+            </div>
+            <hr>
+            <div class="mt-4">
+
+                <div class="form-check d-flex justify-content-center px-1 ">
+                    <input class="form-check-input  " type="radio" name="flexRadioDefault" id="radio1">
+                    <label class="form-check-label mx-2" for="radio1">Male</label>
+                </div>
+                <div class="form-check  d-flex justify-content-center px-1">
+                    <input class="form-check-input " type="radio" name="flexRadioDefault" id="radio2">
+                    <label class="form-check-label mx-2" for="radio2">Female</label>
+                </div>
+
+                <div class=" d-flex justify-content-center">
+                    <button onclick="selectGender()" class="bg-success text-light rounded border-0 px-3 py-2"
+                        type="button">Check selected
+                        Gender</button>
+                </div>
+                <span id="span1" class="d-flex justify-content-center"></span>
+
+            </div>
+            <hr>
+            <div class="row mt-3 d-flex justify-content-center">
+                <div class="col-12">
+                    <form role="form">
+                        <div class="form-group text-center">
+                            <label for="TextIme">First Name:</label>
+                            <input id="TextIme" type="text" name="Ime" placeholder="Your first name"
+                                class="form-control mt-3">
+                        </div>
+                        <div class="form-group text-center pt-3">
+                            <label for="TextPrezime">Last Name:</label>
+                            <input id="TextPrezime" type="text" name="Prezime" placeholder="Your last name"
+                                class="form-control mt-3">
+                        </div>
+                        <div class="form-group text-center pt-3">
+                            <label for="FavouriteAnimal">Favourite Animal:</label>
+                            <input id="FavouriteAnimal" type="text" name="Animal" placeholder="Your Favourite animal"
+                                class="form-control mt-3">
+                        </div>
+                        <span id="span2"></span>
+                        <div class="d-flex justify-content-center mt-4">
+                            <p id="p2"></p>
+                            <button onclick="newLocation()" type="button"
+                                class="bg-primary text-light rounded border-0  px-3 py-2">Submit</button>
+                        </div>
+                        <div class="d-flex justify-content-center mt-2">
+                            <button onclick="showInput()" type="button"
+                                class="bg-primary text-light rounded border-0  px-3 py-2">Show
+                                input</button>
+                        </div>
+                        <p class="text-center" id="output"></p>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="KlijentskiKod11.js"></script>
+</body>
+
+</html>
